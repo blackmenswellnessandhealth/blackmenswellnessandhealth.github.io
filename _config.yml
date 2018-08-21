@@ -1,0 +1,29 @@
+#default site with leaflet added using jekyll new site
+
+# Site settings
+title: Black Men's Health and Wellness
+email: dmosley@nycap.rr.com
+description: "This set examines the stability of ethnoracial health disparities in Albany"
+#baseurl: "https://ovrdc.github.io/neohio-gis-2016-leaflet-jekyll-turf" # the subpath of your site, e.g. /blog/
+url: "https://blackmenswellnessandhealth.github.io" # the base hostname & protocol for your site
+twitter_username: getbounds
+github_username:  ovrdc
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+include: ["_pages"]
+output_ext: html
+permalink: /:title.html
+
+#Define default layout and categories to make this a bit easier for my map example posts
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "map"
+      category: "examples"
+      permalink: /:title.html
